@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <img class="coverImg" src="./imgs/1000 hours.jpeg" alt="">
+        </div>
+        <div id="right">
+            <h3>All songs</h3>
+            <div id="all-songs">
+                <div class="song-card">
+                    <div id="part-1">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.cWYZ4jaHDJbrRFGse_rTegHaFR&pid=Api&P=0&h=180" alt="die with a smile">
+                    <h2>Die with a smile</h2>
+                    </div>
+                    <a href="/songs/1000 hours.mp3" download="1000 hours"></a>
+                    <h6 class="duration">03:00</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="player">
+        <h1></h1>
+        <h3 id="backward"><i class="ri-skip-back-mini-fill"></i></h3>
+        <h3 id="play"><i class="ri-play-fill"></i></h3>
+        <h3 id="forward"><i class="ri-skip-forward-mini-fill"></i></h3>
+        <input type="range" min="0" max="100" id="seekBar" value="0">
+    </div>
+</body>
+</html>

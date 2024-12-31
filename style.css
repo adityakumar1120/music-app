@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#left{
+    height: 100%;
+    width: 45%;
+    background-color: #333;
+    /* background-image: url('https://tse4.mm.bing.net/th?id=OIP.cWYZ4jaHDJbrRFGse_rTegHaFR&pid=Api&P=0&h=180');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.coverImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#right{
+    height: 100%;
+    width: 55%;
+    padding: 0 3vw;
+}
+
+#right h3{
+    font-size: 40px;
+}
+
+#all-songs{
+    height: 85%;
+    width: 100%;
+    margin-top: 30px;
+}
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #595a5a;
+    padding: 18px 10px;
+}
+.song-card:hover{
+    background-color: #1e1e1e;
+}
+.song-card #part-1{
+    align-items: center;
+    display: flex;
+    /* pointer-events: none; */
+}
+.song-card img{
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.song-card:nth-last-child(1){
+    border-bottom: 2px solid #595a5a;
+}
+.song-card h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.song-card h6{
+    font-size: 16px;
+    /* pointer-events: none; */
+}
+button{
+    pointer-events: all;
+}
+#player{
+    height: 15%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#player h3{
+    background-color: rgba(30, 30, 30, .7);
+    padding: 10px ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+#player h3:active{
+    transform: scale(0.8);
+}
+#player h3 i{
+    font-size: 24px;
+}
+.black{
+    color: #000;
+}
